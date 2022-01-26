@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fbf7f4;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  padding: 8.8 1.3rem;
+  background-color: #1d3557;
+  color: #f1faee;
+}
+.btn:hover {
+  background-color: #003047;
+  color: #eae2b7;
+  box-shadow: 0 1rem 1rem -1rem rgb(0, 0, 0, 0.445);
+}
+.btn_text {
+  margin-left: 0.8rem;
+}
+.spinner {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: inline-block;
+  border: 3px solid #dddf00;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top-color: #fcab41;
+    border-bottom-color: #80ffdb;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
